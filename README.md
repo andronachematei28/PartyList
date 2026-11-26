@@ -9,6 +9,11 @@ the app with your preferred theme, accent color, and language. PartyList keeps
 your birthday list on your device and lets you back it up or transfer selected
 people using a `.partylist` file.
 
+## Official website
+
+Visit the [official PartyList website](https://partylist28.pages.dev/) to
+explore the app and download it from there if you want.
+
 ## Features
 
 ### Keep your people in one place
