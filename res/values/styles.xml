@@ -1,0 +1,5 @@
+<resources>
+<style name="PartyDialogLight" parent="android:style/Theme.Material.Light.Dialog.Alert"><item name="android:colorAccent">#2764A6</item><item name="android:colorBackground">#FAFAFA</item><item name="android:colorBackgroundFloating">#FAFAFA</item><item name="android:windowBackground">@drawable/dialog_light</item><item name="android:windowAnimationStyle">@style/PartyMotion</item><item name="android:windowElevation">0dp</item></style>
+<style name="PartyDialogDark" parent="android:style/Theme.Material.Dialog.Alert"><item name="android:colorAccent">#9DC9FF</item><item name="android:colorBackground">#1B1B1B</item><item name="android:colorBackgroundFloating">#1B1B1B</item><item name="android:windowBackground">@drawable/dialog_dark</item><item name="android:windowAnimationStyle">@style/PartyMotion</item><item name="android:windowElevation">0dp</item></style>
+<style name="PartyMotion"><item name="android:windowEnterAnimation">@anim/sheet_in</item><item name="android:windowExitAnimation">@anim/sheet_out</item></style>
+</resources>
