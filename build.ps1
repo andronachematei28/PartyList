@@ -8,7 +8,7 @@ New-Item -ItemType Directory -Force "$base\build\classes","$base\build\dex" | Ou
 & "$bt\aapt.exe" package -f -m -J "$base\build" -M "$base\AndroidManifest.xml" -S "$base\res" -A "$base\assets" -I $android -F "$base\build\app-unsigned.apk"
 if($LASTEXITCODE -ne 0){throw 'aapt failed'}
 Get-ChildItem -LiteralPath "$base\build\classes\ro\zilefrumoase" -Filter '*.class' -File -ErrorAction SilentlyContinue | Remove-Item
-& javac -encoding UTF-8 --release 8 -classpath $android -d "$base\build\classes" "$base\src\ro\zilefrumoase\MainActivity.java" "$base\src\ro\zilefrumoase\PlannedNotifications.java" "$base\src\ro\zilefrumoase\Boot.java" "$base\src\ro\zilefrumoase\L10n.java"
+& javac -encoding UTF-8 --release 8 -classpath $android -d "$base\build\classes" "$base\src\ro\partylist\MainActivity.java" "$base\src\ro\partylist\PlannedNotifications.java" "$base\src\ro\partylist\Boot.java" "$base\src\ro\partylist\L10n.java"
 if($LASTEXITCODE -ne 0){throw 'javac failed'}
 $classes=Get-ChildItem "$base\build\classes" -Recurse -Filter '*.class' | ForEach-Object {$_.FullName}
 & "$bt\d8.bat" --min-api 28 --lib $android --output "$base\build\dex" $classes
